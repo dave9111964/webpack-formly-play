@@ -5,6 +5,9 @@
   "author": "David Campbell",
   "license": "MIT",
   "private": true,
+  "repository": {
+    "url": "git://github.com/dave9111964/webpack-formly-play.git"
+  }
   "main": "app/index.js",
   "scripts": {
     "start": "node node_modules/.bin/webpack-dev-server --content-base app",
