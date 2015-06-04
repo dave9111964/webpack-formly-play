@@ -1,0 +1,39 @@
+{
+  "name": "Webpack-Formly-Play",
+  "version": "1.0.0",
+  "description": "Playing with Webpack, Angular, and Angular-Formly",
+  "author": "David Campbell",
+  "license": "MIT",
+  "private": true,
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "server": "node server/app.js",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html app/index.html",
+    "update-webdriver": "webdriver-manager-update"
+  },
+  "dependencies": {
+    "angular": "^1.4.0-beta.6",
+    "angular2": "2.0.0-alpha.25",
+    "reflect-metadata": "^0.1.0",
+    "api-check": "^6.0.10",
+    "angular-formly": "^4.0.8",
+    "angular-formly-templates-bootstrap": "^4.0.3",
+    "bootstrap": "^3.3.4",
+    "bootstrap-webpack": "^0.0.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.10.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^1.0.1",
+    "less-loader": "^2.2.0",
+    "style-loader": "^0.12.3",
+    "babel-core": "^5.2.16",
+    "babel-loader": "^5.0.0",
+    "typescript": "^1.5.0-beta",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^1.7.2",
+    "webpack-core": "^0.5.0",
+    "webpack-dev-server": "^1.7.0"
+  }
+}

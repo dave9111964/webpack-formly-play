@@ -1,0 +1,25 @@
+step-two {
+  background: red;
+  text-shadow: 2px 2px #FF0000;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+-webkit-animation mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+
